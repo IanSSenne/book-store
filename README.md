@@ -6,7 +6,7 @@ A small blog using sequelize and express with auth sessions.
 
 View it at [https://aqueous-lowlands-86162.herokuapp.com/](https://aqueous-lowlands-86162.herokuapp.com/)
 
-![image](Assets\21-mern-challenge-demo-01.gif)
+![image](./Assets/21-mern-challenge-demo-01.gif)
 
 ## Table of Contents
 
