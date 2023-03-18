@@ -15,7 +15,7 @@ const resolvers = {
 	Mutation: {
 		async addUser(parent, { username, email, password }, context) {
 			const user = await User.create({
-				displayName: username,
+				username,
 				email,
 				password,
 			});
@@ -39,6 +39,7 @@ const resolvers = {
 			{ bookId, authors, title, description, image, link },
 			context
 		) {
+			console.log(context.user);
 			if (context.user) {
 				const user = await User.findByIdAndUpdate(
 					context.user._id,
